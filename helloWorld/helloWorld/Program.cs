@@ -18,13 +18,6 @@ namespace helloWorld
 
             int inputAge = Convert.ToInt32(Console.ReadLine());
            
-            Console.WriteLine("Your name is " + userName);
-
-            Console.Write(Environment.NewLine);
-
-            Console.WriteLine("oh too young, yet too old " + inputAge);
-
-            Console.Write(Environment.NewLine);
 
                  yesOrNo = Console.ReadLine();
                 
@@ -37,9 +30,15 @@ namespace helloWorld
                     Console.WriteLine("OH LORD JESUS YOU ARE DED");
                     
                 }
-            
 
-            
+            Console.WriteLine("Your name is " + userName);
+
+            Console.Write(Environment.NewLine);
+
+            Console.WriteLine("oh too young, yet too old " + inputAge);
+
+
+
 
 
 
