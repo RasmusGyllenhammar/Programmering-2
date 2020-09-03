@@ -6,7 +6,7 @@ namespace helloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Niklas!");
+           /* Console.WriteLine("Hello Niklas!");
 
             string yesOrNo = "";
             
@@ -86,10 +86,31 @@ namespace helloWorld
                     continue;
                 }
 
+            }*/
+
+            var names = new String[5];
+            
+            Console.WriteLine("Skriv 5 namn");
+
+            for (int i = 0; i < names.Length; i++)
+            {
+              names[i] = Console.ReadLine();
             }
+            Console.WriteLine("skriver ut namnen man skrivit");
+            foreach (var name in names)
+            {
+                Console.WriteLine(name); //skriver ut namnen
+            }
+
             
 
-           
+            Array.Reverse(names);
+            Console.WriteLine("Omvänd lista");
+            foreach (var reversename in names)
+            {
+                Console.WriteLine(reversename);
+            }
+            Console.ReadLine();
 
             
 
