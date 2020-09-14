@@ -16,7 +16,12 @@ namespace Metoder
             //för metod 2
             String[] names = { "JALLAJ", "BISMIHALLA", "ALHAMDULILLAH" };
 
-            Console.WriteLine(MetodTwo(names));
+            //Console.WriteLine(MetodTwo(names)); fel här nu när det är void
+
+            //för metod 3
+            int[] listaMetodTree = {2, 15, 89};
+
+           Console.WriteLine(MetodTre(listaMetodTree));
             
         }
 
@@ -31,30 +36,50 @@ namespace Metoder
             
             return sum;
         }
-        public static String[] MetodTwo(string[] words)
+        public static void MetodTwo(string[] words)
         {
 
 
             
 
-            for(int i = 0; i < words.Length / 2; i++) // delar med två för att den inte ska gå igenom igen så listan blir i samma ordning
+            for(int i = 0; i < words.Length / 2; i++) // delar med två för att den inte ska gå igenom igen så listan blir i samma ordning, här vänder man på listan
             {
                
-                
-                
                 var temp = words[i];
                 words[i] = words[words.Length - i - 1];
-                words[words.Length - i - 1] = temp;
+                words[words.Length - i - 1] = temp; 
 
                 
             }
 
-            foreach(String name in words) // ska skriva ut orden i bakvänd ordning
+            foreach(String name in words) // ska skriva ut orden fast i bakvänd ordning nu
             {
                 Console.WriteLine(name);
             }
             
-            return words;
+            
+        }
+        public static int MetodTre(int[] findBigNumberAndLow)
+        { 
+
+            var lowestNumber = 0;
+            var greatestNumber = 0; 
+
+            for(int i = 0; i < findBigNumberAndLow.Length -1; i++)
+            {
+                if (findBigNumberAndLow[i] > greatestNumber)
+                {
+                    findBigNumberAndLow[i] = greatestNumber ;               
+                }
+                if(findBigNumberAndLow[i] < lowestNumber)
+                {
+                    findBigNumberAndLow[i] = lowestNumber;
+                }
+            }
+
+
+            
+            return lowestNumber & greatestNumber;
         }
     }
 }
