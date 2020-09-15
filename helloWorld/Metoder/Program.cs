@@ -7,6 +7,7 @@ namespace Metoder
     {
         static void Main(string[] args)
         {
+            /**
             Console.WriteLine("Hello methods!");
 
             int[] array = { 10, 10, 12 };
@@ -17,11 +18,12 @@ namespace Metoder
             String[] names = { "JALLAJ", "BISMIHALLA", "ALHAMDULILLAH" };
 
             //Console.WriteLine(MetodTwo(names)); fel här nu när det är void
-
+            */
             //för metod 3
-            int[] listaMetodTree = {2, 15, 89};
+            int[] listaMetodTree = {2, 15, 20};
 
            Console.WriteLine(MetodTre(listaMetodTree));
+           
             
         }
 
@@ -59,27 +61,17 @@ namespace Metoder
             
             
         }
-        public static int MetodTre(int[] findBigNumberAndLow)
-        { 
-
-            var lowestNumber = 0;
-            var greatestNumber = 0; 
-
-            for(int i = 0; i < findBigNumberAndLow.Length -1; i++)
-            {
-                if (findBigNumberAndLow[i] > greatestNumber)
-                {
-                    findBigNumberAndLow[i] = greatestNumber ;               
-                }
-                if(findBigNumberAndLow[i] < lowestNumber)
-                {
-                    findBigNumberAndLow[i] = lowestNumber;
-                }
-            }
+        public static (int,int) MetodTre(int[] findBigNumberAndLow)
+        {   
 
 
-            
-            return lowestNumber & greatestNumber;
+
+           var lowestNumber = findBigNumberAndLow.Min(); // kollar efter minsta värdet 
+            var greatestNumber = findBigNumberAndLow.Max(); // hittar upp största värdet
+           
+
+           
+            return (lowestNumber, greatestNumber);
         }
     }
 }
