@@ -12,17 +12,18 @@ namespace ConsoleApp1
         static Customer sadio = new Customer();
         static void Main(string[] args)
         {
-
-
-            
+            NewCustomer();
             MenuForCars();
 
-            
         }
-      
+        static void NewCustomer()
+        {
+            Console.WriteLine("hello new customer, what is your name?");
+            sadio._name = Console.ReadLine();
+        }
         static void MenuForCars()
         {
-            Console.WriteLine("what cars do you want? Pick any car/cars you like");
+            Console.WriteLine(sadio._name + " what cars do you want? Pick any car/cars you like");
             Console.WriteLine("(1) volvo v40 cc" + "\n" +
           
                               "(2) volvo v60" + "\n" +
@@ -59,7 +60,7 @@ namespace ConsoleApp1
                         continue;
                     case 4:
                         Console.WriteLine("Ok you done shopping");
-                        Console.WriteLine("You have bought " + sadio.shoppingCart.Count + "items");
+                        Console.WriteLine(sadio._name + " ,You have bought " + sadio.shoppingCart.Count + " items");
                         break;
 
                     
