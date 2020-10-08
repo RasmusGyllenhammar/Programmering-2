@@ -14,7 +14,14 @@ namespace ConsoleApp1
         {
             NewCustomer();
             MenuForCars();
+           
 
+        }
+
+        static void Orders()
+        {
+            Console.WriteLine(sadio._name + " ,You have ordered " + sadio.shoppingCart.Count + " items");
+            Environment.Exit(0);
         }
         static void NewCustomer()
         {
@@ -60,8 +67,9 @@ namespace ConsoleApp1
                         continue;
                     case 4:
                         Console.WriteLine("Ok you done shopping");
-                        Console.WriteLine(sadio._name + " ,You have bought " + sadio.shoppingCart.Count + " items");
+                        Orders();
                         break;
+                      
 
                     
 
