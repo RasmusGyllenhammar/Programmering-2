@@ -1,0 +1,13 @@
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\OOP.exe
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\OOP.deps.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\OOP.runtimeconfig.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\OOP.runtimeconfig.dev.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\OOP.dll
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\OOP.pdb
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\OOP.csprojAssemblyReference.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\OOP.AssemblyInfoInputs.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\OOP.AssemblyInfo.cs
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\OOP.csproj.CoreCompileInputs.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\OOP.dll
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\OOP.pdb
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\OOP.genruntimeconfig.cache
