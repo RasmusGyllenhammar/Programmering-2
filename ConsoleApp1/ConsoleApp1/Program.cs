@@ -22,7 +22,11 @@ namespace ConsoleApp1
 
         static void Orders()
         {
-            Console.WriteLine(sadio._name + " ,You have ordered " + sadio._shoppingCart.Count + " items");
+          /**  foreach(var item in sadio._shoppingCart)
+            {
+                Console.WriteLine(item.CarName);
+            }; **/
+            Console.WriteLine(sadio._name + ", You have ordered " + sadio._shoppingCart.Count + " items");
             Environment.Exit(0);
         }
         static void NewCustomer()
@@ -34,14 +38,10 @@ namespace ConsoleApp1
         {
             Console.WriteLine(sadio._name + " what cars do you want? Pick any car/cars you like");
             Console.WriteLine("(1) volvo v40 cc" + "\n" +
-          
-                              "(2) volvo v60" + "\n" +
-                            
-                              "(3) volvo polestar(BEST SELLER)" + "\n" +
-                            
-                              "(4) BMW 1-serie" + "\n" +
-                
-                              "(5) Kia car");
+
+                              "(2) Bmw 1-serie" + "\n" +
+
+                              "(3)Kia car " + "\n");
            
            
             
@@ -58,36 +58,21 @@ namespace ConsoleApp1
                     continue;
 
                 case 2:
-                        Console.WriteLine("volvo v60 added");
-                        coolCar.CarName = "volvo v60";
-                        sadio._shoppingCart.Add(coolCar);
-                        continue;
-
-                    case 3:
-                        Console.WriteLine("polestar added");
-                        coolCar.CarName = "volvo polestar";
-                        sadio._shoppingCart.Add(coolCar);
-                        continue;
-
-                    case 4:
-                        Console.WriteLine("BMW 1-serie added");
+                        Console.WriteLine(" Bmw 1-serie added");
                         bmw._bmwCar = ("Bmw 1-serie");
-                      
                         sadio._shoppingCart.Add(bmw);
                         continue;
 
-                    case 5:
+                    case 3:
                         Console.WriteLine("kia car");
                         kia._kiaCar = "kia";
                         sadio._shoppingCart.Add(kia);
                         continue;
-                        
-
+                    
 
                     case 9:
                         Console.WriteLine("Ok you done shopping");
                         Orders();
-                        
                         break;
                       
 
