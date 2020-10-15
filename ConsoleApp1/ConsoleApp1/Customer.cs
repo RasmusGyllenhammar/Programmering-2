@@ -10,7 +10,7 @@ namespace OOP
 
         public String _name = "";
 
-        public List<product> shoppingCart = new List<product>();
+        public List<product> _shoppingCart = new List<product>();
 
 
     
