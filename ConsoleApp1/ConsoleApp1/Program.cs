@@ -9,6 +9,9 @@ namespace ConsoleApp1
     class Program
     {
         static product coolCar = new product();
+
+
+        static ProductOne volvo = new ProductOne();
         static Customer sadio = new Customer();
         static productTwo bmw = new productTwo();
         static ProductThree kia = new ProductThree();
@@ -22,11 +25,13 @@ namespace ConsoleApp1
 
         static void Orders()
         {
-          /**  foreach(var item in sadio._shoppingCart)
+            Console.WriteLine(sadio._name + ", You have ordered " + sadio._shoppingCart.Count + " items: ");
+
+            foreach (var item in sadio._shoppingCart)
             {
                 Console.WriteLine(item.CarName);
-            }; **/
-            Console.WriteLine(sadio._name + ", You have ordered " + sadio._shoppingCart.Count + " items");
+            }; 
+           
             Environment.Exit(0);
         }
         static void NewCustomer()
@@ -53,19 +58,19 @@ namespace ConsoleApp1
             {
                 case 1:
                     Console.WriteLine("volvo v40 cc added");
-                    coolCar.CarName = "volvo v40 cc";
-                    sadio._shoppingCart.Add(coolCar);  
+                    volvo.CarName = "volvo v40 cc";
+                    sadio._shoppingCart.Add(volvo);  
                     continue;
 
                 case 2:
                         Console.WriteLine(" Bmw 1-serie added");
-                        bmw._bmwCar = ("Bmw 1-serie");
+                        bmw.CarName = "Bmw 1-serie";
                         sadio._shoppingCart.Add(bmw);
                         continue;
 
                     case 3:
-                        Console.WriteLine("kia car");
-                        kia._kiaCar = "kia";
+                        Console.WriteLine("kia car added");
+                        kia.CarName = "kia";
                         sadio._shoppingCart.Add(kia);
                         continue;
                     
