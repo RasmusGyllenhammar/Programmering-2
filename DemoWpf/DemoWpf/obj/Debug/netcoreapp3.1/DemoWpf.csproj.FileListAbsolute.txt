@@ -1,0 +1,3 @@
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\DemoWpf\DemoWpf\obj\Debug\netcoreapp3.1\DemoWpf.csprojAssemblyReference.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\DemoWpf\DemoWpf\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\DemoWpf\DemoWpf\obj\Debug\netcoreapp3.1\DemoWpf_MarkupCompile.cache

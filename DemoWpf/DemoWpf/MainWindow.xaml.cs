@@ -23,6 +23,22 @@ namespace DemoWpf
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(sender is Button number) //Kollar ifall sender är en knapp och isåfall läggs den  i en variabel(number)
+            {
+                switch (number.Content)
+                {
+                    case "1":
+                        Display.Text += number.Content;
+                        break;
+                }
+            }
+        }
+
+      
     }
 }
