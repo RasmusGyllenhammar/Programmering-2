@@ -28,15 +28,34 @@ namespace DemoWpf
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(sender is Button number) //Kollar ifall sender är en knapp och isåfall läggs den  i en variabel(number)
+            if(sender is Button button) //Kollar ifall sender är en knapp och isåfall läggs den  i en variabel(number)
             {
-                switch (number.Content)
+                switch (button.Content)
                 {
                     case "1":
-                        Display.Text += number.Content;
+                    case "2":
+                    case "3":
+                    case "4":
+                    case "5":
+                    case "6":
+                    case "7":
+                    case "8":
+                    case "9":
+                    case "0":
+                    case "*":
+                    case "+":
+                    case "-":
+                    case "/":
+                    case ".":
+                    case "=":
+                        Display.Text += button.Content;
+                        break;
+                    default:
                         break;
                 }
             }
+           // var talenSomText = Text.split('+')
+           // var tal1 = convert.ToInt32(talenSomText+[0]
         }
 
       
