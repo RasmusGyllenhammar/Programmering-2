@@ -42,14 +42,15 @@ namespace DemoWpf
                     case "8":
                     case "9":
                     case "0":
-                    case "*":
+                    case "*": //operationer och neråt, fixa funktion med dem här
                     case "+":
                     case "-":
                     case "/":
                     case ".":
-                    case "=":
+                    case "=": 
                         Display.Text += button.Content;
                         break;
+                    
                     default:
                         break;
                 }
@@ -58,6 +59,37 @@ namespace DemoWpf
            // var tal1 = convert.ToInt32(talenSomText+[0]
         }
 
-      
+        class Operate
+        {
+            public virtual double Operations(double numberOne, double numberTwo)
+            {
+                return 0;
+            }
+        }
+       
+        class addition : Operate
+        { 
+      /**  public override double add() 
+        {
+
+            var result = numberOne + numberTwo;
+            return result;
+        }**/
+
+
+            
     }
+
+        private void Button_Click_BackSpace(object sender, RoutedEventArgs e)
+        {
+            //backSPace ta bort ifall man skriver fel
+            if(Display.Text.Length > 0)
+            {
+                Display.Text = Display.Text.Remove(Display.Text.Length - 1);
+            }
+           
+        }
+    }
+
+   
 }
