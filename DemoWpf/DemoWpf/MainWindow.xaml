@@ -49,7 +49,10 @@
         <Button Grid.Row="4" Grid.Column="2"   Content="=" FontSize="50px" Click="Button_Click"/>
         <Button Grid.Row="4" Grid.Column="3"   Content="*" FontSize="50px" Click="Button_Click"/>
 
-        <Button Grid.Row="5" Grid.Column="3" Content="⌫"  Click="Button_Click_BackSpace"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="⌫" FontSize="25px"  Click="Button_Click_BackSpace"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="√" FontSize="25px"  />
+        <Button Grid.Row="5" Grid.Column="1" Content="något" FontSize="20px"  />
+        <Button Grid.Row="5" Grid.Column="0" Content="Delete this shit" FontSize="20px"  />
     </Grid>
 
 </Window>

@@ -42,47 +42,69 @@ namespace DemoWpf
                     case "8":
                     case "9":
                     case "0":
-                    case "*": //operationer och neråt, fixa funktion med dem här
+                    case "*": //operationer och neråt
                     case "+":
                     case "-":
                     case "/":
                     case ".":
-                    case "=": 
+                   
                         Display.Text += button.Content;
                         break;
-                    
+                    case "=":
+                        CalculateOperations();
+                        break;
+
                     default:
                         break;
                 }
             }
-           // var talenSomText = Text.split('+')
-           // var tal1 = convert.ToInt32(talenSomText+[0]
+           
         }
 
-        class Operate
+
+
+
+        //This method Calculates the specific basic arithmetic mathematical operation you picked
+        private void CalculateOperations()
         {
-            public virtual double Operations(double numberOne, double numberTwo)
-            {
-                return 0;
-            }
-        }
-       
-        class addition : Operate
-        { 
-      /**  public override double add() 
-        {
-
-            var result = numberOne + numberTwo;
-            return result;
-        }**/
+            // var talenSomText = Text.split('+')
+            // var tal1 = convert.ToDouble(talenSomText+[0]
+            String[] operationList;
 
 
+            operationList = Display.Text.Split('*', '/', '+', '-');
+
+            var numberOne = Convert.ToDouble(operationList[0]); //första talet, index 0
+            var numberTwo = Convert.ToDouble(operationList[1]); //andra talet, listan tar med de fyra och då blir index 0,1 för talen
             
-    }
+            if (Display.Text.Contains("+"))
+            {   
+                var result = "=" + numberOne + numberTwo;
+                Display.Text += result;
+            }
+            else if (Display.Text.Contains("*"))
+            {
+                var result = "=" + numberOne * numberTwo;
+                Display.Text += result;
+            }
+            else if (Display.Text.Contains("-"))
+            {
+                var result = numberOne - numberTwo;
+                Display.Text += "=" + result;
+            }
+            else if (Display.Text.Contains("/"))
+            {
+                var result = numberOne / numberTwo;
+                Display.Text += "=" + result;
+            }
+            
+
+      
+        }
 
         private void Button_Click_BackSpace(object sender, RoutedEventArgs e)
         {
-            //backSPace ta bort ifall man skriver fel
+            //backSPace, kollar ifall det är något skrivit i displayen så tar den bort det onClick
             if(Display.Text.Length > 0)
             {
                 Display.Text = Display.Text.Remove(Display.Text.Length - 1);
