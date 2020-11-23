@@ -28,7 +28,7 @@ namespace DemoWpf
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(sender is Button button) //Kollar ifall sender är en knapp och isåfall läggs den  i en variabel(number)
+            if(sender is Button button) //Kollar ifall sender är en knapp och isåfall läggs den  i en variabel(button)
             {
                 switch (button.Content)
                 {
@@ -47,16 +47,16 @@ namespace DemoWpf
                     case "-":
                     case "/":
                     case ".":
-                   
+                    
+
+
+
                         Display.Text += button.Content;
                         break;
                     case "=":
                         CalculateOperations();
                         break;
-                    /**case "Delete":
-                        Button_CLick_Delete;
-                        break;**/
-
+         
                     default:
                         break;
                 }
@@ -106,6 +106,8 @@ namespace DemoWpf
                 var result = "=" + divisonSum;
                 Display.Text += result;
             }
+           
+            
             
 
       
@@ -114,12 +116,12 @@ namespace DemoWpf
         private void Button_Click_BackSpace(object sender, RoutedEventArgs e)
         {
             //backSPace, kollar ifall det är något skrivit i displayen så tar den bort det onClick
-          if(Display.Text == "error")
+            //just nu måste man klicka två gånger för att det ska försvinna
+            if (Display.Text == "error")
             {
                 Display.Text = "";
             }
-            
-            if(Display.Text.Length > 0)
+            if (Display.Text.Length > 0)
             {
                 Display.Text = Display.Text.Remove(Display.Text.Length - 1);
             }
@@ -128,24 +130,47 @@ namespace DemoWpf
                 Display.Text = "error";
             }
            
-        }
 
+
+
+
+        }
+        //delete att this shit, deletes everything on the display87
         private void Button_CLick_Delete(object sender, RoutedEventArgs e)
         {
-
-            //delete att lthis shit
             Display.Text = "";
+        }
+       
+        //Squareroot of the number you choose, converting the textblock to double just to execute the Math.Sqrt method and then converting back to an String to display it on the textblock
+        private void Button_Click_SquareRoot(object sender, RoutedEventArgs e)
+          {
+
+
+            if (Display.Text.Length > 0)
+            {
+                var squareRootSum = Convert.ToString(Math.Sqrt(Convert.ToDouble(Display.Text)));
+                Display.Text += "=" + squareRootSum;
+            }
+            else
+            {
+                Display.Text = "try again";
+            }
+
+
+
+            
+            
            
+
+          
         }
 
-        //denna funkar inte bruh
-        public static void Delete(TextBox text)
+        private void Button_Click_Percentage(object sender, RoutedEventArgs e)
         {
-            text.Text = "";
+            // ta det delat på 100
+            
         }
-
-     
     }
 
-   
+
 }

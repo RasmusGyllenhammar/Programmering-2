@@ -50,8 +50,8 @@
         <Button Grid.Row="4" Grid.Column="3"   Content="*" FontSize="50px" Click="Button_Click"/>
 
         <Button Grid.Row="5" Grid.Column="3" Content="⌫" FontSize="25px"  Click="Button_Click_BackSpace"/>
-        <Button Grid.Row="5" Grid.Column="2" Content="√" FontSize="25px"   />
-        <Button Grid.Row="5" Grid.Column="1" Content="något" FontSize="20px"  />
+        <Button Grid.Row="5" Grid.Column="2" Content="√" FontSize="25px" Click="Button_Click_SquareRoot"  />
+        <Button Grid.Row="5" Grid.Column="1" Content="%" FontSize="20px" Click="Button_Click_Percentage" />
         <Button Grid.Row="5" Grid.Column="0" Content="Delete" FontSize="20px" Click="Button_CLick_Delete" />
     </Grid>
 
