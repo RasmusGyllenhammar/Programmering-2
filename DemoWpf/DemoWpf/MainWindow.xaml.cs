@@ -53,6 +53,9 @@ namespace DemoWpf
                     case "=":
                         CalculateOperations();
                         break;
+                    /**case "Delete":
+                        Button_CLick_Delete;
+                        break;**/
 
                     default:
                         break;
@@ -69,33 +72,39 @@ namespace DemoWpf
         {
             // var talenSomText = Text.split('+')
             // var tal1 = convert.ToDouble(talenSomText+[0]
+
             String[] operationList;
 
 
             operationList = Display.Text.Split('*', '/', '+', '-');
 
-            var numberOne = Convert.ToDouble(operationList[0]); //första talet, index 0
-            var numberTwo = Convert.ToDouble(operationList[1]); //andra talet, listan tar med de fyra och då blir index 0,1 för talen
+            var numberOne = Convert.ToDouble(operationList[0]);                 //första talet, index 0
+            var numberTwo = Convert.ToDouble(operationList[1]);                  //andra talet, listan tar med de fyra och då blir index 0,1 för talen
             
             if (Display.Text.Contains("+"))
-            {   
-                var result = "=" + numberOne + numberTwo;
+            {
+               var additionSum = numberOne + numberTwo; //gör beräkningar sepererat sen lägg till strängar
+                var result = "=" + additionSum ;
+               
                 Display.Text += result;
             }
             else if (Display.Text.Contains("*"))
             {
-                var result = "=" + numberOne * numberTwo;
+               var multiplicationSum = numberOne * numberTwo;
+                var result = "=" + multiplicationSum ;
                 Display.Text += result;
             }
             else if (Display.Text.Contains("-"))
             {
-                var result = numberOne - numberTwo;
-                Display.Text += "=" + result;
+                var subtractionSum = numberOne - numberTwo;
+                var result = "=" + subtractionSum;
+                Display.Text += result;
             }
             else if (Display.Text.Contains("/"))
             {
-                var result = numberOne / numberTwo;
-                Display.Text += "=" + result;
+                var divisonSum = numberOne / numberTwo;
+                var result = "=" + divisonSum;
+                Display.Text += result;
             }
             
 
@@ -105,12 +114,37 @@ namespace DemoWpf
         private void Button_Click_BackSpace(object sender, RoutedEventArgs e)
         {
             //backSPace, kollar ifall det är något skrivit i displayen så tar den bort det onClick
+          if(Display.Text == "error")
+            {
+                Display.Text = "";
+            }
+            
             if(Display.Text.Length > 0)
             {
                 Display.Text = Display.Text.Remove(Display.Text.Length - 1);
             }
+            else
+            {
+                Display.Text = "error";
+            }
            
         }
+
+        private void Button_CLick_Delete(object sender, RoutedEventArgs e)
+        {
+
+            //delete att lthis shit
+            Display.Text = "";
+           
+        }
+
+        //denna funkar inte bruh
+        public static void Delete(TextBox text)
+        {
+            text.Text = "";
+        }
+
+     
     }
 
    
