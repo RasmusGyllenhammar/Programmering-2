@@ -46,7 +46,7 @@ namespace DemoWpf
                     case "+":
                     case "-":
                     case "/":
-                    case ".":
+                    case ",":
                     
 
 
@@ -73,69 +73,71 @@ namespace DemoWpf
             // var talenSomText = Text.split('+')
             // var tal1 = convert.ToDouble(talenSomText+[0]
 
-            String[] operationList;
 
+            var result = 0.0;
 
-            operationList = Display.Text.Split('*', '/', '+', '-');
+            var operationList = Display.Text.Split('*', '/', '+', '-');
+
+            if (operationList[0] == "0")
+            {
+
+                operationList[0] = "1";
+
+            }
+            else if (operationList[1] == "0")
+            {
+                operationList[1] = "1";
+            }
 
             var numberOne = Convert.ToDouble(operationList[0]);                 //första talet, index 0
             var numberTwo = Convert.ToDouble(operationList[1]);                  //andra talet, listan tar med de fyra och då blir index 0,1 för talen
-            
+
+        
             if (Display.Text.Contains("+"))
             {
                var additionSum = numberOne + numberTwo; //gör beräkningar sepererat sen lägg till strängar
-                var result = "=" + additionSum ;
+                 result = additionSum ;
                
-                Display.Text += result;
             }
             else if (Display.Text.Contains("*"))
             {
                var multiplicationSum = numberOne * numberTwo;
-                var result = "=" + multiplicationSum ;
-                Display.Text += result;
+                 result = multiplicationSum ;
             }
             else if (Display.Text.Contains("-"))
             {
                 var subtractionSum = numberOne - numberTwo;
-                var result = "=" + subtractionSum;
-                Display.Text += result;
+                 result = subtractionSum;
             }
             else if (Display.Text.Contains("/"))
             {
                 var divisonSum = numberOne / numberTwo;
-                var result = "=" + divisonSum;
-                Display.Text += result;
+                 result = divisonSum;
             }
-           
-            
-            
+            Display.Text += "=" + result;
 
-      
+
         }
 
         private void Button_Click_BackSpace(object sender, RoutedEventArgs e)
         {
             //backSPace, kollar ifall det är något skrivit i displayen så tar den bort det onClick
             //just nu måste man klicka två gånger för att det ska försvinna
-            if (Display.Text == "error")
-            {
-                Display.Text = "";
-            }
+          
             if (Display.Text.Length > 0)
             {
                 Display.Text = Display.Text.Remove(Display.Text.Length - 1);
             }
             else
             {
-                Display.Text = "error";
+                Display.Text = "";
             }
            
 
 
 
-
         }
-        //delete att this shit, deletes everything on the display87
+        //delete this shit, deletes everything on the display87
         private void Button_CLick_Delete(object sender, RoutedEventArgs e)
         {
             Display.Text = "";
@@ -144,7 +146,7 @@ namespace DemoWpf
         //Squareroot of the number you choose, converting the textblock to double just to execute the Math.Sqrt method and then converting back to an String to display it on the textblock
         private void Button_Click_SquareRoot(object sender, RoutedEventArgs e)
           {
-
+           
 
             if (Display.Text.Length > 0)
             {
@@ -153,22 +155,24 @@ namespace DemoWpf
             }
             else
             {
-                Display.Text = "try again";
+                Display.Text = "";
             }
-
-
-
-            
-            
-           
-
           
+
+
         }
 
-        private void Button_Click_Percentage(object sender, RoutedEventArgs e)
+        private void Button_Click_PercentageToDecimal(object sender, RoutedEventArgs e)
         {
             // ta det delat på 100
+
+            var percentageToDecimalSum = Convert.ToString(double.Parse(Display.Text)/100); 
+            Display.Text += "=" + percentageToDecimalSum;
+
             
+                
+                //Display.Text.ToString("P4", Convert.ToDouble(Display.text));
+           
         }
     }
 
