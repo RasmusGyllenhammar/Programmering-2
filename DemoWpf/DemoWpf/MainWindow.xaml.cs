@@ -25,7 +25,7 @@ namespace DemoWpf
             InitializeComponent();
             
         }
-
+        //will show the content within the buttons on the display(textblock) when clicked on
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if(sender is Button button) //Kollar ifall sender är en knapp och isåfall läggs den  i en variabel(button)
@@ -42,7 +42,7 @@ namespace DemoWpf
                     case "8":
                     case "9":
                     case "0":
-                    case "*": //operationer och neråt
+                    case "*": 
                     case "+":
                     case "-":
                     case "/":
@@ -69,33 +69,30 @@ namespace DemoWpf
 
         //This method Calculates the specific basic arithmetic mathematical operation you picked
         private void CalculateOperations()
-        {
-            // var talenSomText = Text.split('+')
-            // var tal1 = convert.ToDouble(talenSomText+[0]
-
+        {   
 
             var result = 0.0;
-
+            
             var operationList = Display.Text.Split('*', '/', '+', '-');
 
-            if (operationList[0] == "0")
+            //kollar ifall man bara klickar på = så kraschar det inte
+            if(operationList.Length != 2)
             {
-
-                operationList[0] = "1";
-
-            }
-            else if (operationList[1] == "0")
-            {
-                operationList[1] = "1";
+                return;
             }
 
-            var numberOne = Convert.ToDouble(operationList[0]);                 //första talet, index 0
-            var numberTwo = Convert.ToDouble(operationList[1]);                  //andra talet, listan tar med de fyra och då blir index 0,1 för talen
+            //kollar ifall det är 8+ något, så kraschar det inte
+          
+
+            var numberOne = Convert.ToDouble(operationList[0]); 
+            var numberTwo = Convert.ToDouble(operationList[1]);
+
+            
 
         
             if (Display.Text.Contains("+"))
             {
-               var additionSum = numberOne + numberTwo; //gör beräkningar sepererat sen lägg till strängar
+               var additionSum = numberOne + numberTwo; 
                  result = additionSum ;
                
             }
@@ -110,7 +107,12 @@ namespace DemoWpf
                  result = subtractionSum;
             }
             else if (Display.Text.Contains("/"))
-            {
+            {   if(numberTwo == 0)
+                {
+                    Display.Text = "dont divid by 0 you doughnut";
+                    return;
+                }
+
                 var divisonSum = numberOne / numberTwo;
                  result = divisonSum;
             }
@@ -121,9 +123,7 @@ namespace DemoWpf
 
         private void Button_Click_BackSpace(object sender, RoutedEventArgs e)
         {
-            //backSPace, kollar ifall det är något skrivit i displayen så tar den bort det onClick
-            //just nu måste man klicka två gånger för att det ska försvinna
-          
+            //Backspace, checks if it's something on the display and will then delete it by one, if it's nothing on the display it will not do anything
             if (Display.Text.Length > 0)
             {
                 Display.Text = Display.Text.Remove(Display.Text.Length - 1);
@@ -131,12 +131,12 @@ namespace DemoWpf
             else
             {
                 Display.Text = "";
+                
             }
            
 
-
-
         }
+
         //delete this shit, deletes everything on the display87
         private void Button_CLick_Delete(object sender, RoutedEventArgs e)
         {
@@ -146,8 +146,6 @@ namespace DemoWpf
         //Squareroot of the number you choose, converting the textblock to double just to execute the Math.Sqrt method and then converting back to an String to display it on the textblock
         private void Button_Click_SquareRoot(object sender, RoutedEventArgs e)
           {
-           
-
             if (Display.Text.Length > 0)
             {
                 var squareRootSum = Convert.ToString(Math.Sqrt(Convert.ToDouble(Display.Text)));
@@ -158,21 +156,21 @@ namespace DemoWpf
                 Display.Text = "";
             }
           
-
-
         }
-
+        //on click, divide the number on the display / 100  
         private void Button_Click_PercentageToDecimal(object sender, RoutedEventArgs e)
         {
-            // ta det delat på 100
+            var percentageToDecimalSum = "";
 
-            var percentageToDecimalSum = Convert.ToString(double.Parse(Display.Text)/100); 
-            Display.Text += "=" + percentageToDecimalSum;
-
-            
-                
-                //Display.Text.ToString("P4", Convert.ToDouble(Display.text));
-           
+            if (Display.Text.Length > 0)
+            {
+                percentageToDecimalSum = Convert.ToString(double.Parse(Display.Text) / 100);
+                Display.Text += "=" + percentageToDecimalSum;
+            }
+            else
+            {
+                Display.Text = "";
+            }
         }
     }
 
