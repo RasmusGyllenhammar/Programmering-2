@@ -47,9 +47,6 @@ namespace DemoWpf
                     case "-":
                     case "/":
                     case ",":
-                    
-
-
 
                         Display.Text += button.Content;
                         break;
@@ -81,15 +78,10 @@ namespace DemoWpf
                 return;
             }
 
-            //kollar ifall det är 8+ något, så kraschar det inte
-          
-
             var numberOne = Convert.ToDouble(operationList[0]); 
             var numberTwo = Convert.ToDouble(operationList[1]);
-
             
-
-        
+            
             if (Display.Text.Contains("+"))
             {
                var additionSum = numberOne + numberTwo; 
@@ -120,10 +112,10 @@ namespace DemoWpf
 
 
         }
-
+        //Backspace, checks if it's something on the display and will then delete it by one, if it's nothing on the display it will not do anything
         private void Button_Click_BackSpace(object sender, RoutedEventArgs e)
         {
-            //Backspace, checks if it's something on the display and will then delete it by one, if it's nothing on the display it will not do anything
+           
             if (Display.Text.Length > 0)
             {
                 Display.Text = Display.Text.Remove(Display.Text.Length - 1);
@@ -137,7 +129,7 @@ namespace DemoWpf
 
         }
 
-        //delete this shit, deletes everything on the display87
+        //delete this shit, delete everything on the display
         private void Button_CLick_Delete(object sender, RoutedEventArgs e)
         {
             Display.Text = "";
