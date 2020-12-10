@@ -14,12 +14,12 @@ namespace abstractLabb
         }
         public override void eat()
         {
-            Console.WriteLine("SHOOTS HIS HEAD INTO THE GROUND");
+            Console.WriteLine(" ostrich SHOOTS HIS HEAD INTO THE GROUND OSTrich");
         }
 
         public override void sleep()
         {
-            Console.WriteLine("THEY DONT SLEEP");
+            Console.WriteLine(" osTRICHTHEY DONT SLEEP ");
         }
     }
 }

@@ -14,12 +14,12 @@ namespace abstractLabb
         }
         public override void eat()
         {
-            Console.WriteLine("NONOMNOM");
+            Console.WriteLine("PIg NONOMNOM");
         }
 
         public override void sleep()
         {
-            Console.WriteLine("I SLEEp");
+            Console.WriteLine(" PIG I SLEEp");
         }
     }
 }

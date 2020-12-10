@@ -12,7 +12,7 @@ namespace abstractLabb
         public string Color { get; set; }
 
 
-        //beteenden
+        //beteenden ha detta i interface,
         public abstract void sleep();
 
         public abstract void eat();

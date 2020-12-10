@@ -1,0 +1,13 @@
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\bin\Debug\netcoreapp3.1\abstractLabb.exe
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\bin\Debug\netcoreapp3.1\abstractLabb.deps.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\bin\Debug\netcoreapp3.1\abstractLabb.runtimeconfig.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\bin\Debug\netcoreapp3.1\abstractLabb.runtimeconfig.dev.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\bin\Debug\netcoreapp3.1\abstractLabb.dll
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\bin\Debug\netcoreapp3.1\abstractLabb.pdb
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\obj\Debug\netcoreapp3.1\abstractLabb.csprojAssemblyReference.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\obj\Debug\netcoreapp3.1\abstractLabb.AssemblyInfoInputs.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\obj\Debug\netcoreapp3.1\abstractLabb.AssemblyInfo.cs
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\obj\Debug\netcoreapp3.1\abstractLabb.csproj.CoreCompileInputs.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\obj\Debug\netcoreapp3.1\abstractLabb.dll
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\obj\Debug\netcoreapp3.1\abstractLabb.pdb
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\abstractLabb\abstractLabb\obj\Debug\netcoreapp3.1\abstractLabb.genruntimeconfig.cache
