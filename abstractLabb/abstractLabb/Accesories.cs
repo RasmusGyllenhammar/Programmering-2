@@ -5,7 +5,8 @@ using System.Text;
 namespace abstractLabb
 {
    abstract class Accesories
-    {
+    {   
+        //egenskaper
         public int HourHand { get; set; }
 
         public string Color { get; set; }

@@ -6,19 +6,22 @@ namespace abstractLabb
 {
     class Rolex : Accesories
     {
-        public int HourHand { get; set; }
+      public Rolex()
+        {
+            HourHand = 7;
+            Color = "purple";
+        }
 
-        public string Color { get; set; }
 
         //beteenden
         public override void expensive()
         {
-            Console.WriteLine("IT IS VERY EXPENSIVE");
+            Console.WriteLine("IT IS VERY EXPENSIVE 200");
         }
 
         public override void shiny()
         {
-            Console.WriteLine("");
+            Console.WriteLine("bling bling");
         }
     }
 }

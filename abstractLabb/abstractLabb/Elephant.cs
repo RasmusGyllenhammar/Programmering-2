@@ -5,7 +5,12 @@ using System.Text;
 namespace abstractLabb
 {
     class Elephant : Animal
-    {
+    {   
+        public Elephant()
+        {
+            NumberOfEyes = 3;
+            Color = "green";
+        }
         public override void eat()
         {
             Console.WriteLine("ElEPHANT is eating peanut");

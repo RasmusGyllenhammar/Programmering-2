@@ -6,7 +6,7 @@ namespace abstractLabb
 {
    abstract class Animal
     {
-
+        // initalize D
         public int NumberOfEyes { get; set; }
 
         public string Color { get; set; }
