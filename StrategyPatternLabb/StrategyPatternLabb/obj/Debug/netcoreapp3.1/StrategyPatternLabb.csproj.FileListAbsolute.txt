@@ -1,0 +1,13 @@
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\bin\Debug\netcoreapp3.1\StrategyPatternLabb.exe
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\bin\Debug\netcoreapp3.1\StrategyPatternLabb.deps.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\bin\Debug\netcoreapp3.1\StrategyPatternLabb.runtimeconfig.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\bin\Debug\netcoreapp3.1\StrategyPatternLabb.runtimeconfig.dev.json
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\bin\Debug\netcoreapp3.1\StrategyPatternLabb.dll
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\bin\Debug\netcoreapp3.1\StrategyPatternLabb.pdb
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\obj\Debug\netcoreapp3.1\StrategyPatternLabb.csprojAssemblyReference.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\obj\Debug\netcoreapp3.1\StrategyPatternLabb.AssemblyInfoInputs.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\obj\Debug\netcoreapp3.1\StrategyPatternLabb.AssemblyInfo.cs
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\obj\Debug\netcoreapp3.1\StrategyPatternLabb.csproj.CoreCompileInputs.cache
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\obj\Debug\netcoreapp3.1\StrategyPatternLabb.dll
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\obj\Debug\netcoreapp3.1\StrategyPatternLabb.pdb
+C:\Users\rasmus.gyllenhammar\Documents\GitHub\Programmering-2\StrategyPatternLabb\StrategyPatternLabb\obj\Debug\netcoreapp3.1\StrategyPatternLabb.genruntimeconfig.cache
