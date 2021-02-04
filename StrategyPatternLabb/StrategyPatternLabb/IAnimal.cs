@@ -7,5 +7,6 @@ namespace StrategyPatternLabb
     interface IAnimal
     {
         void animalScreech();
+        
     }
 }
