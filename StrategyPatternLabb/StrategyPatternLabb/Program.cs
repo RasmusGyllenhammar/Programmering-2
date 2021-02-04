@@ -13,10 +13,12 @@ namespace StrategyPatternLabb
             switch (choice)
             {
                 case "d":
-                    animalSound = new Donkey();
+                    animalSound= new Donkey();
+                    animalSound.animalScreech();
                     break;
                 case "c":
                     animalSound = new Camel();
+                    animalSound.animalScreech();
                     break;
                 case "k":
                     animalSound = new Cat();
