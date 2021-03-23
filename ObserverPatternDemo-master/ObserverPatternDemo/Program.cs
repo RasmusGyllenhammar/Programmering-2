@@ -6,17 +6,17 @@ namespace ObserverPatternDemo
     {
         static void Main(string[] args)
         {
-            Subject rasmusChannel = new Subject();
+            Channel rasmusChannel = new Channel();
 
-            Observer observer1 = new Observer("Observer 1");
+            Subscribers observer1 = new Subscribers("KUngen Rasmus");
             rasmusChannel.Subscribe(observer1);
 
-            Observer observer2 = new Observer("Observer 2");
+            Subscribers observer2 = new Subscribers(" King Haris");
             rasmusChannel.Subscribe(observer2);
 
-            rasmusChannel.Inventory++;
+            rasmusChannel.Inventory++; //fler videos jaoo
 
-            Observer observer3 = new Observer("Observer 3");
+            Subscribers observer3 = new Subscribers("Kung Oskaroru"); //oskar subscriba king
             rasmusChannel.Subscribe(observer3);
 
             rasmusChannel.Inventory++;

@@ -17,7 +17,7 @@ namespace ObserverPatternDemo
 
         public void Update()
         {
-            Console.WriteLine(SubscriberName + ": A new product has arrived at the store");
+            Console.WriteLine(SubscriberName + ": A new product has arrived in DA HOUSE Rasmus channel is king");
         }
     }
 }
