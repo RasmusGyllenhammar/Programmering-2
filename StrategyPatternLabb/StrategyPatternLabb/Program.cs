@@ -36,6 +36,7 @@ namespace StrategyPatternLabb
 
             }
             Console.WriteLine("You butcher da animal? meat meat meat");
+
             
 
         }
